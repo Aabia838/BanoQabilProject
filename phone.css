@@ -1,12 +1,43 @@
 #navbar {
+    display: flex;
     flex-direction: column;
     height: 18vw;
+    align-items: center;
 }
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
 #navbar ul li a {
     font-size: 1.1rem;
     padding: 0px 7px;
     padding-bottom: 8px;
+    text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    #navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navbar ul li a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        padding-bottom: 5px;
+    }
+} */
+
 #Home {
     height: 500px;
     padding: 3px 68px;
